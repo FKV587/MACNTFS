@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+## 欢迎光临NTFS
+你可以访问[NTFS](https://fkv587.github.io/MACNTFS/) 获取详细信息
 
-You can use the [editor on GitHub](https://github.com/FKV587/MACNTFS/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### 代码
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# 实现方案 
+基于*****
+## 获取安装
+获取：单击以安装
+适用于MAC的NTFS解决方案免费提供。你现在可以在这里找到它[NTFS](https://fkv587.github.io/MACNTFS)。
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
+
+
 ### Header 3
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/FKV587/MACNTFS/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
