@@ -1,5 +1,5 @@
 ## 欢迎光临NTFS
-你可以访问[NTFS](https://fkv587.github.io/MACNTFS/) 获取详细信息
+你可以访问[MACNTFS](https://fkv587.github.io/MACNTFS/) 获取详细信息
 
 # 实现方案 
 控制台操作  
@@ -11,7 +11,7 @@
 第三步：sudo vi /etc/fstab  
 第四步：LABEL=NAME none ntfs rw,auto,nobrowse  
 第五步：diskutil mount /dev/IDENTIFIER  
-第二种方案
+第二种方案  
 第二步：diskutil unmount /dev/IDENTIFIER  
 第三步：sudo vi /etc/fstab  
 第四步：UUID=%@ none ntfs rw,auto,nobrowse  
@@ -29,7 +29,7 @@ NAME如果为空请输入Untitled
 
 ## 获取安装 
 获取：单击以安装  
-适用于MAC的NTFS解决方案免费提供。你现在可以在这里找到它[NTFS](https://fkv587.github.io/MACNTFS)。
+适用于MAC的NTFS解决方案免费提供。你现在可以在这里找到它[MACNTFS](https://fkv587.github.io/MACNTFS)。
 
 ### 你的打赏是我前进的动力！
 ### 谢谢打赏，我会再接再厉！
