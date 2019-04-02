@@ -11,7 +11,7 @@
 第三步：sudo vi /etc/fstab  
 第四步：LABEL=NAME none ntfs rw,auto,nobrowse  
 第五步：diskutil mount /dev/IDENTIFIER  
-第二种方案
+第二种方案  
 第二步：diskutil unmount /dev/IDENTIFIER  
 第三步：sudo vi /etc/fstab  
 第四步：UUID=%@ none ntfs rw,auto,nobrowse  
