@@ -1,0 +1,905 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		063D3984A0CC1A9B0DA185E5 /* Pods_NTFS_MACOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3BA593A84CA214A51E752E8 /* Pods_NTFS_MACOS.framework */; };
+		2F5ED95E224218E0003F7964 /* NTFSMainTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5ED95D224218E0003F7964 /* NTFSMainTableCellView.m */; };
+		2F5ED96222421C96003F7964 /* NTFSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5ED96122421C96003F7964 /* NTFSManager.m */; };
+		2F5ED9652242306B003F7964 /* NTFSMainTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F5ED9642242306A003F7964 /* NTFSMainTableCellView.xib */; };
+		2F5ED96822432C6F003F7964 /* NSView+FKDefalut.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5ED96722432C6F003F7964 /* NSView+FKDefalut.m */; };
+		2F5ED96B22433A69003F7964 /* NSColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5ED96A22433A69003F7964 /* NSColor+HexColor.m */; };
+		2F5ED97022434181003F7964 /* FKLodingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5ED96E22434181003F7964 /* FKLodingViewController.m */; };
+		2F5ED97122434181003F7964 /* FKLodingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F5ED96F22434181003F7964 /* FKLodingViewController.xib */; };
+		2F5ED97422436BCE003F7964 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F5ED97622436BCE003F7964 /* InfoPlist.strings */; };
+		2F5ED97B22447938003F7964 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5ED97A22447937003F7964 /* ServiceManagement.framework */; };
+		2F9DAF5F2248B03300B837A3 /* NSViewController+Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9DAF5E2248B03300B837A3 /* NSViewController+Alert.m */; };
+		2F9DAF612248CBCC00B837A3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9DAF602248CBCC00B837A3 /* Security.framework */; };
+		2F9DAF752248D11400B837A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9DAF742248D11400B837A3 /* main.m */; };
+		2FDB603C223D08B30077B043 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDB603B223D08B30077B043 /* AppDelegate.m */; };
+		2FDB603F223D08B30077B043 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDB603E223D08B30077B043 /* ViewController.m */; };
+		2FDB6041223D08B40077B043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FDB6040223D08B40077B043 /* Assets.xcassets */; };
+		2FDB6044223D08B40077B043 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FDB6042223D08B40077B043 /* Main.storyboard */; };
+		2FDB6047223D08B40077B043 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDB6046223D08B40077B043 /* main.m */; };
+		2FDB6052223D08B40077B043 /* NTFS_MACOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDB6051223D08B40077B043 /* NTFS_MACOSTests.m */; };
+		2FDB605D223D08B40077B043 /* NTFS_MACOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDB605C223D08B40077B043 /* NTFS_MACOSUITests.m */; };
+		2FDB60B8223D099B0077B043 /* Disk.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDB609A223D099A0077B043 /* Disk.m */; };
+		2FDB60BE223D099B0077B043 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDB60A4223D099A0077B043 /* Constants.m */; };
+		2FDB60C0223D099B0077B043 /* STPrivilegedTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDB60A6223D099A0077B043 /* STPrivilegedTask.m */; };
+		2FDB60C1223D099B0077B043 /* NSString+NTFS_OSX.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDB60A8223D099A0077B043 /* NSString+NTFS_OSX.m */; };
+		2FDB60C3223D099B0077B043 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDB60AD223D099B0077B043 /* Logger.m */; };
+		2FDB60C4223D099B0077B043 /* CommandLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDB60AE223D099B0077B043 /* CommandLine.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2FDB604E223D08B40077B043 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FDB602F223D08B30077B043 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FDB6036223D08B30077B043;
+			remoteInfo = NTFS_MACOS;
+		};
+		2FDB6059223D08B40077B043 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FDB602F223D08B30077B043 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FDB6036223D08B30077B043;
+			remoteInfo = NTFS_MACOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2F9DAF702248D11400B837A3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1CD2DE4EB8076E008E6BC506 /* Pods-NTFS_MACOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTFS_MACOS.debug.xcconfig"; path = "Target Support Files/Pods-NTFS_MACOS/Pods-NTFS_MACOS.debug.xcconfig"; sourceTree = "<group>"; };
+		2F5ED95C224218E0003F7964 /* NTFSMainTableCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTFSMainTableCellView.h; sourceTree = "<group>"; };
+		2F5ED95D224218E0003F7964 /* NTFSMainTableCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTFSMainTableCellView.m; sourceTree = "<group>"; };
+		2F5ED96022421C96003F7964 /* NTFSManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTFSManager.h; sourceTree = "<group>"; };
+		2F5ED96122421C96003F7964 /* NTFSManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTFSManager.m; sourceTree = "<group>"; };
+		2F5ED9642242306A003F7964 /* NTFSMainTableCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTFSMainTableCellView.xib; sourceTree = "<group>"; };
+		2F5ED96622432C6F003F7964 /* NSView+FKDefalut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSView+FKDefalut.h"; sourceTree = "<group>"; };
+		2F5ED96722432C6F003F7964 /* NSView+FKDefalut.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSView+FKDefalut.m"; sourceTree = "<group>"; };
+		2F5ED96922433A69003F7964 /* NSColor+HexColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSColor+HexColor.h"; sourceTree = "<group>"; };
+		2F5ED96A22433A69003F7964 /* NSColor+HexColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSColor+HexColor.m"; sourceTree = "<group>"; };
+		2F5ED96D22434181003F7964 /* FKLodingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKLodingViewController.h; sourceTree = "<group>"; };
+		2F5ED96E22434181003F7964 /* FKLodingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKLodingViewController.m; sourceTree = "<group>"; };
+		2F5ED96F22434181003F7964 /* FKLodingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FKLodingViewController.xib; sourceTree = "<group>"; };
+		2F5ED97522436BCE003F7964 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2F5ED97722436CFA003F7964 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		2F5ED97822436CFB003F7964 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		2F5ED97A22447937003F7964 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		2F9DAF5D2248B03300B837A3 /* NSViewController+Alert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSViewController+Alert.h"; sourceTree = "<group>"; };
+		2F9DAF5E2248B03300B837A3 /* NSViewController+Alert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSViewController+Alert.m"; sourceTree = "<group>"; };
+		2F9DAF602248CBCC00B837A3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2F9DAF722248D11400B837A3 /* Launchd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Launchd; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F9DAF742248D11400B837A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F9DAF792248D18B00B837A3 /* NTFSHelper-Launchd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NTFSHelper-Launchd.plist"; sourceTree = "<group>"; };
+		2F9DAF7A2248D18B00B837A3 /* NTFSHelper */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NTFSHelper; sourceTree = "<group>"; };
+		2F9DAF7B2248D18B00B837A3 /* NTFSHelper-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NTFSHelper-Info.plist"; sourceTree = "<group>"; };
+		2F9DAF7C2248D18B00B837A3 /* NTFSHelper-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NTFSHelper-Prefix.pch"; sourceTree = "<group>"; };
+		2FDB6037223D08B30077B043 /* NTFS_MACOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTFS_MACOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FDB603A223D08B30077B043 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2FDB603B223D08B30077B043 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2FDB603D223D08B30077B043 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2FDB603E223D08B30077B043 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2FDB6040223D08B40077B043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FDB6043223D08B40077B043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2FDB6045223D08B40077B043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FDB6046223D08B40077B043 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2FDB6048223D08B40077B043 /* NTFS_MACOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NTFS_MACOS.entitlements; sourceTree = "<group>"; };
+		2FDB604D223D08B40077B043 /* NTFS_MACOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NTFS_MACOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FDB6051223D08B40077B043 /* NTFS_MACOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTFS_MACOSTests.m; sourceTree = "<group>"; };
+		2FDB6053223D08B40077B043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FDB6058223D08B40077B043 /* NTFS_MACOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NTFS_MACOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FDB605C223D08B40077B043 /* NTFS_MACOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTFS_MACOSUITests.m; sourceTree = "<group>"; };
+		2FDB605E223D08B40077B043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FDB609A223D099A0077B043 /* Disk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Disk.m; sourceTree = "<group>"; };
+		2FDB60A2223D099A0077B043 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		2FDB60A4223D099A0077B043 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		2FDB60A6223D099A0077B043 /* STPrivilegedTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPrivilegedTask.m; sourceTree = "<group>"; };
+		2FDB60A7223D099A0077B043 /* CommandLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandLine.h; sourceTree = "<group>"; };
+		2FDB60A8223D099A0077B043 /* NSString+NTFS_OSX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NTFS_OSX.m"; sourceTree = "<group>"; };
+		2FDB60AA223D099A0077B043 /* NTFS-OSX-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NTFS-OSX-Prefix.pch"; sourceTree = "<group>"; };
+		2FDB60AC223D099A0077B043 /* STPrivilegedTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPrivilegedTask.h; sourceTree = "<group>"; };
+		2FDB60AD223D099B0077B043 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
+		2FDB60AE223D099B0077B043 /* CommandLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandLine.m; sourceTree = "<group>"; };
+		2FDB60B0223D099B0077B043 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		2FDB60B6223D099B0077B043 /* NSString+NTFS_OSX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NTFS_OSX.h"; sourceTree = "<group>"; };
+		2FDB60B7223D099B0077B043 /* Disk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Disk.h; sourceTree = "<group>"; };
+		EC8B72198279F3E532029109 /* Pods-NTFS_MACOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTFS_MACOS.release.xcconfig"; path = "Target Support Files/Pods-NTFS_MACOS/Pods-NTFS_MACOS.release.xcconfig"; sourceTree = "<group>"; };
+		F3BA593A84CA214A51E752E8 /* Pods_NTFS_MACOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NTFS_MACOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F9DAF6F2248D11400B837A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FDB6034223D08B30077B043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F9DAF612248CBCC00B837A3 /* Security.framework in Frameworks */,
+				2F5ED97B22447938003F7964 /* ServiceManagement.framework in Frameworks */,
+				063D3984A0CC1A9B0DA185E5 /* Pods_NTFS_MACOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FDB604A223D08B40077B043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FDB6055223D08B40077B043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12FC8EA7172DD63793D0F6C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CD2DE4EB8076E008E6BC506 /* Pods-NTFS_MACOS.debug.xcconfig */,
+				EC8B72198279F3E532029109 /* Pods-NTFS_MACOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2F5ED95B224218A8003F7964 /* View&&Model */ = {
+			isa = PBXGroup;
+			children = (
+				2FDB60B7223D099B0077B043 /* Disk.h */,
+				2FDB609A223D099A0077B043 /* Disk.m */,
+				2F5ED95C224218E0003F7964 /* NTFSMainTableCellView.h */,
+				2F5ED95D224218E0003F7964 /* NTFSMainTableCellView.m */,
+				2F5ED9642242306A003F7964 /* NTFSMainTableCellView.xib */,
+			);
+			path = "View&&Model";
+			sourceTree = "<group>";
+		};
+		2F5ED95F22421C7F003F7964 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2FDB60AC223D099A0077B043 /* STPrivilegedTask.h */,
+				2FDB60A6223D099A0077B043 /* STPrivilegedTask.m */,
+				2F5ED96022421C96003F7964 /* NTFSManager.h */,
+				2F5ED96122421C96003F7964 /* NTFSManager.m */,
+				2FDB60A7223D099A0077B043 /* CommandLine.h */,
+				2FDB60AE223D099B0077B043 /* CommandLine.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		2F5ED9632242252A003F7964 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2FDB60B6223D099B0077B043 /* NSString+NTFS_OSX.h */,
+				2FDB60A8223D099A0077B043 /* NSString+NTFS_OSX.m */,
+				2FDB60A2223D099A0077B043 /* Constants.h */,
+				2FDB60A4223D099A0077B043 /* Constants.m */,
+				2FDB60B0223D099B0077B043 /* Logger.h */,
+				2FDB60AD223D099B0077B043 /* Logger.m */,
+				2F5ED96622432C6F003F7964 /* NSView+FKDefalut.h */,
+				2F5ED96722432C6F003F7964 /* NSView+FKDefalut.m */,
+				2F5ED96922433A69003F7964 /* NSColor+HexColor.h */,
+				2F5ED96A22433A69003F7964 /* NSColor+HexColor.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		2F5ED96C22434148003F7964 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				2F5ED96D22434181003F7964 /* FKLodingViewController.h */,
+				2F5ED96E22434181003F7964 /* FKLodingViewController.m */,
+				2F5ED96F22434181003F7964 /* FKLodingViewController.xib */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		2F9DAF732248D11400B837A3 /* NTFSHelper */ = {
+			isa = PBXGroup;
+			children = (
+				2F9DAF7A2248D18B00B837A3 /* NTFSHelper */,
+				2F9DAF7B2248D18B00B837A3 /* NTFSHelper-Info.plist */,
+				2F9DAF792248D18B00B837A3 /* NTFSHelper-Launchd.plist */,
+				2F9DAF7C2248D18B00B837A3 /* NTFSHelper-Prefix.pch */,
+				2F9DAF742248D11400B837A3 /* main.m */,
+			);
+			path = NTFSHelper;
+			sourceTree = "<group>";
+		};
+		2FDB602E223D08B30077B043 = {
+			isa = PBXGroup;
+			children = (
+				2FDB6039223D08B30077B043 /* NTFS_MACOS */,
+				2FDB6050223D08B40077B043 /* NTFS_MACOSTests */,
+				2FDB605B223D08B40077B043 /* NTFS_MACOSUITests */,
+				2F9DAF732248D11400B837A3 /* NTFSHelper */,
+				2FDB6038223D08B30077B043 /* Products */,
+				12FC8EA7172DD63793D0F6C5 /* Pods */,
+				99F713DCD4031BDB5C0BB800 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2FDB6038223D08B30077B043 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FDB6037223D08B30077B043 /* NTFS_MACOS.app */,
+				2FDB604D223D08B40077B043 /* NTFS_MACOSTests.xctest */,
+				2FDB6058223D08B40077B043 /* NTFS_MACOSUITests.xctest */,
+				2F9DAF722248D11400B837A3 /* Launchd */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FDB6039223D08B30077B043 /* NTFS_MACOS */ = {
+			isa = PBXGroup;
+			children = (
+				2F5ED96C22434148003F7964 /* Loading */,
+				2F5ED9632242252A003F7964 /* Helper */,
+				2F5ED95F22421C7F003F7964 /* Manager */,
+				2F5ED95B224218A8003F7964 /* View&&Model */,
+				2FDB603A223D08B30077B043 /* AppDelegate.h */,
+				2FDB603B223D08B30077B043 /* AppDelegate.m */,
+				2FDB603D223D08B30077B043 /* ViewController.h */,
+				2FDB603E223D08B30077B043 /* ViewController.m */,
+				2FDB6040223D08B40077B043 /* Assets.xcassets */,
+				2FDB6042223D08B40077B043 /* Main.storyboard */,
+				2FDB6045223D08B40077B043 /* Info.plist */,
+				2FDB6046223D08B40077B043 /* main.m */,
+				2F5ED97622436BCE003F7964 /* InfoPlist.strings */,
+				2FDB60AA223D099A0077B043 /* NTFS-OSX-Prefix.pch */,
+				2FDB6048223D08B40077B043 /* NTFS_MACOS.entitlements */,
+			);
+			path = NTFS_MACOS;
+			sourceTree = "<group>";
+		};
+		2FDB6050223D08B40077B043 /* NTFS_MACOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				2FDB6051223D08B40077B043 /* NTFS_MACOSTests.m */,
+				2FDB6053223D08B40077B043 /* Info.plist */,
+			);
+			path = NTFS_MACOSTests;
+			sourceTree = "<group>";
+		};
+		2FDB605B223D08B40077B043 /* NTFS_MACOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2FDB605C223D08B40077B043 /* NTFS_MACOSUITests.m */,
+				2FDB605E223D08B40077B043 /* Info.plist */,
+			);
+			path = NTFS_MACOSUITests;
+			sourceTree = "<group>";
+		};
+		99F713DCD4031BDB5C0BB800 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F9DAF602248CBCC00B837A3 /* Security.framework */,
+				2F5ED97A22447937003F7964 /* ServiceManagement.framework */,
+				F3BA593A84CA214A51E752E8 /* Pods_NTFS_MACOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F9DAF712248D11400B837A3 /* Launchd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F9DAF762248D11400B837A3 /* Build configuration list for PBXNativeTarget "Launchd" */;
+			buildPhases = (
+				2F9DAF6E2248D11400B837A3 /* Sources */,
+				2F9DAF6F2248D11400B837A3 /* Frameworks */,
+				2F9DAF702248D11400B837A3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Launchd;
+			productName = NTFSHelper;
+			productReference = 2F9DAF722248D11400B837A3 /* Launchd */;
+			productType = "com.apple.product-type.tool";
+		};
+		2FDB6036223D08B30077B043 /* NTFS_MACOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FDB6061223D08B40077B043 /* Build configuration list for PBXNativeTarget "NTFS_MACOS" */;
+			buildPhases = (
+				8E241554AC4F62513ACD5AEF /* [CP] Check Pods Manifest.lock */,
+				2FDB6033223D08B30077B043 /* Sources */,
+				2FDB6034223D08B30077B043 /* Frameworks */,
+				2FDB6035223D08B30077B043 /* Resources */,
+				E38B3CDB66A6EB4916E40078 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NTFS_MACOS;
+			productName = NTFS_MACOS;
+			productReference = 2FDB6037223D08B30077B043 /* NTFS_MACOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2FDB604C223D08B40077B043 /* NTFS_MACOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FDB6064223D08B40077B043 /* Build configuration list for PBXNativeTarget "NTFS_MACOSTests" */;
+			buildPhases = (
+				2FDB6049223D08B40077B043 /* Sources */,
+				2FDB604A223D08B40077B043 /* Frameworks */,
+				2FDB604B223D08B40077B043 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FDB604F223D08B40077B043 /* PBXTargetDependency */,
+			);
+			name = NTFS_MACOSTests;
+			productName = NTFS_MACOSTests;
+			productReference = 2FDB604D223D08B40077B043 /* NTFS_MACOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2FDB6057223D08B40077B043 /* NTFS_MACOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FDB6067223D08B40077B043 /* Build configuration list for PBXNativeTarget "NTFS_MACOSUITests" */;
+			buildPhases = (
+				2FDB6054223D08B40077B043 /* Sources */,
+				2FDB6055223D08B40077B043 /* Frameworks */,
+				2FDB6056223D08B40077B043 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FDB605A223D08B40077B043 /* PBXTargetDependency */,
+			);
+			name = NTFS_MACOSUITests;
+			productName = NTFS_MACOSUITests;
+			productReference = 2FDB6058223D08B40077B043 /* NTFS_MACOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FDB602F223D08B30077B043 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "付凯";
+				TargetAttributes = {
+					2F9DAF712248D11400B837A3 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					2FDB6036223D08B30077B043 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					2FDB604C223D08B40077B043 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 2FDB6036223D08B30077B043;
+					};
+					2FDB6057223D08B40077B043 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 2FDB6036223D08B30077B043;
+					};
+				};
+			};
+			buildConfigurationList = 2FDB6032223D08B30077B043 /* Build configuration list for PBXProject "NTFS_MACOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 2FDB602E223D08B30077B043;
+			productRefGroup = 2FDB6038223D08B30077B043 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FDB6036223D08B30077B043 /* NTFS_MACOS */,
+				2FDB604C223D08B40077B043 /* NTFS_MACOSTests */,
+				2FDB6057223D08B40077B043 /* NTFS_MACOSUITests */,
+				2F9DAF712248D11400B837A3 /* Launchd */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FDB6035223D08B30077B043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F5ED97122434181003F7964 /* FKLodingViewController.xib in Resources */,
+				2FDB6041223D08B40077B043 /* Assets.xcassets in Resources */,
+				2F5ED9652242306B003F7964 /* NTFSMainTableCellView.xib in Resources */,
+				2FDB6044223D08B40077B043 /* Main.storyboard in Resources */,
+				2F5ED97422436BCE003F7964 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FDB604B223D08B40077B043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FDB6056223D08B40077B043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8E241554AC4F62513ACD5AEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NTFS_MACOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E38B3CDB66A6EB4916E40078 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NTFS_MACOS/Pods-NTFS_MACOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AppSandboxFileAccess/AppSandboxFileAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppSandboxFileAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NTFS_MACOS/Pods-NTFS_MACOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F9DAF6E2248D11400B837A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F9DAF752248D11400B837A3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FDB6033223D08B30077B043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F5ED97022434181003F7964 /* FKLodingViewController.m in Sources */,
+				2FDB60B8223D099B0077B043 /* Disk.m in Sources */,
+				2F5ED96222421C96003F7964 /* NTFSManager.m in Sources */,
+				2FDB603F223D08B30077B043 /* ViewController.m in Sources */,
+				2FDB6047223D08B40077B043 /* main.m in Sources */,
+				2FDB60C1223D099B0077B043 /* NSString+NTFS_OSX.m in Sources */,
+				2FDB60C3223D099B0077B043 /* Logger.m in Sources */,
+				2F5ED96822432C6F003F7964 /* NSView+FKDefalut.m in Sources */,
+				2FDB60BE223D099B0077B043 /* Constants.m in Sources */,
+				2FDB603C223D08B30077B043 /* AppDelegate.m in Sources */,
+				2F5ED95E224218E0003F7964 /* NTFSMainTableCellView.m in Sources */,
+				2F5ED96B22433A69003F7964 /* NSColor+HexColor.m in Sources */,
+				2FDB60C0223D099B0077B043 /* STPrivilegedTask.m in Sources */,
+				2FDB60C4223D099B0077B043 /* CommandLine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FDB6049223D08B40077B043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FDB6052223D08B40077B043 /* NTFS_MACOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FDB6054223D08B40077B043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FDB605D223D08B40077B043 /* NTFS_MACOSUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2FDB604F223D08B40077B043 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FDB6036223D08B30077B043 /* NTFS_MACOS */;
+			targetProxy = 2FDB604E223D08B40077B043 /* PBXContainerItemProxy */;
+		};
+		2FDB605A223D08B40077B043 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FDB6036223D08B30077B043 /* NTFS_MACOS */;
+			targetProxy = 2FDB6059223D08B40077B043 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F5ED97622436BCE003F7964 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F5ED97522436BCE003F7964 /* en */,
+				2F5ED97822436CFB003F7964 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2FDB6042223D08B40077B043 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FDB6043223D08B40077B043 /* Base */,
+				2F5ED97722436CFA003F7964 /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F9DAF772248D11400B837A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95N79HJV5B;
+				INFOPLIST_FILE = "$(SRCROOT)/NTFSHelper/NTFSHelper-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = fukai.ntfs.NTFSHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2F9DAF782248D11400B837A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95N79HJV5B;
+				INFOPLIST_FILE = "$(SRCROOT)/NTFSHelper/NTFSHelper-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = fukai.ntfs.NTFSHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2FDB605F223D08B40077B043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2FDB6060223D08B40077B043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2FDB6062223D08B40077B043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CD2DE4EB8076E008E6BC506 /* Pods-NTFS_MACOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NTFS_MACOS/NTFS_MACOS.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 95N79HJV5B;
+				GCC_PREFIX_HEADER = "NTFS_MACOS/NTFS-OSX-Prefix.pch";
+				INFOPLIST_FILE = NTFS_MACOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = fukai.ntfs.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		2FDB6063223D08B40077B043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC8B72198279F3E532029109 /* Pods-NTFS_MACOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NTFS_MACOS/NTFS_MACOS.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 95N79HJV5B;
+				GCC_PREFIX_HEADER = "NTFS_MACOS/NTFS-OSX-Prefix.pch";
+				INFOPLIST_FILE = NTFS_MACOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = fukai.ntfs.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		2FDB6065223D08B40077B043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 95N79HJV5B;
+				INFOPLIST_FILE = NTFS_MACOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fukai.NTFS-MACOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NTFS_MACOS.app/Contents/MacOS/NTFS_MACOS";
+			};
+			name = Debug;
+		};
+		2FDB6066223D08B40077B043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 95N79HJV5B;
+				INFOPLIST_FILE = NTFS_MACOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fukai.NTFS-MACOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NTFS_MACOS.app/Contents/MacOS/NTFS_MACOS";
+			};
+			name = Release;
+		};
+		2FDB6068223D08B40077B043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 95N79HJV5B;
+				INFOPLIST_FILE = NTFS_MACOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fukai.NTFS-MACOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NTFS_MACOS;
+			};
+			name = Debug;
+		};
+		2FDB6069223D08B40077B043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 95N79HJV5B;
+				INFOPLIST_FILE = NTFS_MACOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fukai.NTFS-MACOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NTFS_MACOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F9DAF762248D11400B837A3 /* Build configuration list for PBXNativeTarget "Launchd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F9DAF772248D11400B837A3 /* Debug */,
+				2F9DAF782248D11400B837A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FDB6032223D08B30077B043 /* Build configuration list for PBXProject "NTFS_MACOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FDB605F223D08B40077B043 /* Debug */,
+				2FDB6060223D08B40077B043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FDB6061223D08B40077B043 /* Build configuration list for PBXNativeTarget "NTFS_MACOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FDB6062223D08B40077B043 /* Debug */,
+				2FDB6063223D08B40077B043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FDB6064223D08B40077B043 /* Build configuration list for PBXNativeTarget "NTFS_MACOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FDB6065223D08B40077B043 /* Debug */,
+				2FDB6066223D08B40077B043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FDB6067223D08B40077B043 /* Build configuration list for PBXNativeTarget "NTFS_MACOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FDB6068223D08B40077B043 /* Debug */,
+				2FDB6069223D08B40077B043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2FDB602F223D08B30077B043 /* Project object */;
+}

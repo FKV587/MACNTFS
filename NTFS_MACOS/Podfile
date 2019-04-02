@@ -1,0 +1,11 @@
+
+platform :osx, '10.10'
+use_frameworks!
+
+target "NTFS_MACOS" do
+    pod 'AppSandboxFileAccess', '~> 1.0.14'
+    pod 'ReactiveCocoa', '~> 2.5'
+    pod 'Masonry'
+
+end
+
