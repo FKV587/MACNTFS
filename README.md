@@ -5,7 +5,7 @@
 控制台操作
 控制台输入 diskutil list
 获取到磁盘信息
-![Image text](https://github.com/FKV587/MACNTFS/blob/gh-pages/3847f7b46b1f352db552338443213a48.png)  
+![Image text](https://github.com/FKV587/MACNTFS/master/files/3847f7b46b1f352db552338443213a48.png)  
 第一种方案  
 diskutil unmount /dev/IDENTIFIER  
 sudo vi /etc/fstab  
@@ -24,12 +24,12 @@ NAME对应磁盘名称
 NAME中的空格用\040代替  
 
 基于MAC系统自带的NTFS实现的 使用退出磁盘请手动退出后在拔出磁盘  
-![Image text](https://github.com/FKV587/MACNTFS/blob/gh-pages/f7b7571f6eca95f8aa140bad6bbdfde6.png)
+![Image text](https://github.com/FKV587/MACNTFS/master/files/f7b7571f6eca95f8aa140bad6bbdfde6.png)
 
 ## 获取安装 
 获取：单击以安装  
 适用于MAC的NTFS解决方案免费提供。你现在可以在这里找到它[NTFS](https://fkv587.github.io/MACNTFS)。
 
 ### 一个不要脸的程序员，自己做了个APP觉得可以的求打赏【手动滑稽】
-![Image text](https://github.com/FKV587/MACNTFS/blob/gh-pages/36afdd175de8cf5031879d91b6f036e8.png)  
+![Image text](https://github.com/FKV587/MACNTFS/master/files/36afdd175de8cf5031879d91b6f036e8.png)  
 支付宝 谢谢大佬
