@@ -1,5 +1,5 @@
 ## 欢迎光临NTFS
-你可以访问[MACNTFS](https://github.com/FKV587/MACNTFS/blob/master/files/MACNTFS.pkg.zip) 获取文件
+你可以访问[MACNTFS](https://raw.githubusercontent.com/FKV587/MACNTFS/master/files/MACNTFS.pkg.zip) 获取文件
 
 # 实现方案 
 控制台操作  
@@ -29,7 +29,7 @@ NAME如果为空请输入Untitled
 
 ## 获取安装 
 获取：单击以安装  
-适用于MAC的NTFS解决方案免费提供。你现在可以在这里找到它[MACNTFS](https://github.com/FKV587/MACNTFS/blob/master/files/MACNTFS.pkg.zip)。
+适用于MAC的NTFS解决方案免费提供。你现在可以在这里找到它[MACNTFS](https://raw.githubusercontent.com/FKV587/MACNTFS/master/files/MACNTFS.pkg.zip)。
 
 ### 你的打赏是我前进的动力！
 ### 谢谢打赏，我会再接再厉！
